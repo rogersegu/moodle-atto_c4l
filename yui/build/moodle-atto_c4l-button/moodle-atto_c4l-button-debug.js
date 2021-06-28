@@ -89,13 +89,13 @@ YUI.add('moodle-atto_c4l-button', function (Y, NAME) {
         name: M.util.get_string('figure', 'atto_c4l'), 
         type:"contextual",
         imageClass: "c4l-figure-icon",
-        code:"<p class=\"c4l-spacer\"></p><figure class=\"c4l-figure\"><img src=\"https://source.unsplash.com/random/800x600\" alt=\"Lorem impsum dolor sit amet\"><figcaption><em class=\"c4l-figure-footer\">Consectetur adipiscing elit.</em><span class=\"c4l-figure-caption\">Phasellus a posuere nibh.</span></figcaption></figure><p><br></p>"
+        code:"<p class=\"c4l-spacer\"></p><figure class=\"c4l-figure\"><img src=\"https://source.unsplash.com/random/800x600\" alt=\"Lorem impsum dolor sit amet\"><figcaption><em class=\"c4l-figure-footer\">Consectetur adipiscing elit.</em><span class=\"c4l-figure-caption\"><strong>Font: </strong>Phasellus a posuere nibh.</span></figcaption></figure><p><br></p>"
      }, 
      {
         name: M.util.get_string('tag', 'atto_c4l'), 
         type:"contextual",
         imageClass: "c4l-tag-icon",
-        code:"<p class=\"c4l-spacer\"></p><div class=\"c4l-display-left\"><div class=\"c4l-tag\">Lorem ipsum</div></div><p><br></p>"
+        code:"<p class=\"c4l-spacer\"></p><div class=\"c4l-display-left\"><div class=\"c4l-tag\">Lorem ipsum</div></div>"
      },
      {
         name: M.util.get_string('estimatedtime', 'atto_c4l'), 
@@ -107,7 +107,7 @@ YUI.add('moodle-atto_c4l-button', function (Y, NAME) {
         name: M.util.get_string('duedate', 'atto_c4l'), 
         type:"procedural",
         imageClass: "c4l-duedate-icon",
-        code:"<p class=\"c4l-spacer\"></p><div class=\"c4l-inline-group\"><div class=\"c4l-duedate\">17 de novembre</div></div>"
+        code:"<p class=\"c4l-spacer\"></p><div class=\"c4l-inline-group\"><div class=\"c4l-duedate\">November 17th</div></div>"
      },
      {
         name: M.util.get_string('proceduralcontext', 'atto_c4l'), 
