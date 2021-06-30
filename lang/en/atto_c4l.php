@@ -22,7 +22,9 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['pluginname'] = 'Components for Learning (Atto)';
+$string['pluginname'] = 'Components for Learning (c4l)';
+$string['atto_c4l'] = 'atto_c4l';
+$string['generalheading'] = 'General settings'; 
 $string['dialogtitle'] = 'Choose a component';
 $string['contextual'] = 'Contextual';
 $string['procedural'] = 'Procedural';
@@ -45,4 +47,5 @@ $string['gradingvalue'] = 'Grading Value';
 $string['expectedfeedback'] = 'Expected Feedback';
 $string['allpurposecard'] = 'All-Purpose Card';
 $string['inlinetag'] = 'Inline tag';
+$string['enableattoc4l'] = 'Enable Components for Learning'; 
 

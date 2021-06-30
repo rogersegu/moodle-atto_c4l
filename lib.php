@@ -54,5 +54,5 @@ function atto_c4l_strings_for_js() {
                                           'expectedfeedback',
                                           'allpurposecard',
                                           'inlinetag'),
-                                        'atto_c4l');
+                                      'atto_c4l');
 }
