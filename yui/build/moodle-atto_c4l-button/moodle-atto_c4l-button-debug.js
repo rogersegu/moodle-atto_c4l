@@ -34,8 +34,6 @@ YUI.add('moodle-atto_c4l-button', function (Y, NAME) {
  */
 
 
-
-
  var components = [
      {
         name: M.util.get_string('keyconcept', 'atto_c4l'), 
@@ -151,122 +149,122 @@ var currentButton;
 
 var componentsArray = Y.Array(components);
 
- Y.namespace('M.atto_c4l').Button = Y.Base.create('button', Y.M.editor_atto.EditorPlugin, [], {
- 
-     /**
-      * A reference to the current selection at the time that the dialogue
-      * was opened.
-      *
-      * @property _currentSelection
-      * @type Range
-      * @private
-      */
-     _currentSelection: null,
- 
-     initializer: function() {
-         // If we don't have the capability to view then give up.
-         if (this.get('disabled')){
-             return;
-         }
- 
-         var theicon = 'iconone';
+Y.namespace('M.atto_c4l').Button = Y.Base.create('button', Y.M.editor_atto.EditorPlugin, [], {
 
+   /**
+   * A reference to the current selection at the time that the dialogue
+   * was opened.
+   *
+   * @property _currentSelection
+   * @type Range
+   * @private
+   */
+   _currentSelection: null,
 
-         // Add the c4l icon/buttons
-         this.addButton({
-             icon: 'ed/' + theicon,
-             iconComponent: 'atto_c4l',
-             buttonName: theicon,
-             callback: this._displayDialogue,
-             callbackArgs: theicon
-         });
-     },
- 
- 
-      /**
-      * Display the c4l buttons
-      *
-      * @method _displayDialogue
-      * @private
-      */
-     _displayDialogue: function(e, clickedicon) {
-         e.preventDefault();
-         var width=600;
- 
-         var dialogue = this.getDialogue({
-            headerContent: M.util.get_string('dialogtitle', 'atto_c4l'),
-             width: width + 'px',
-             focusAfterHide: clickedicon
-         });
-         //dialog doesn't detect changes in width without this
-         //if you reuse the dialog, this seems necessary
-         if(dialogue.width !== width + 'px'){
-             dialogue.set('width',width+'px');
-         }
-         
+   initializer: function() {
+      // If we don't have the capability to view then give up.
+      if (this.get('disabled')){
+            return;
+      }
 
-         //create content container
-         var bodycontent =  Y.Node.create('<div class="c4l-plugin-container"></div>');
-         var buttonsGrid = Y.Node.create('<div class="c4l-buttons-grid"></div>');
-         
-         var newButton;
-         var selectedButton;
-         var counter = 0;
-         var iconClass;
+      var theicon = 'iconone';
 
-         this._assembleButtons(buttonsGrid,newButton,counter,iconClass,'contextual');
-         bodycontent.append(buttonsGrid);
+      // Add the c4l icon/buttons
+      this.addButton({
+            icon: 'ed/' + theicon,
+            iconComponent: 'atto_c4l',
+            buttonName: theicon,
+            callback: this._displayDialogue,
+            callbackArgs: theicon
+      });
+   },
 
-        var SetOfbuttons = bodycontent.all('button');
-        console.log(SetOfbuttons);
-        SetOfbuttons.on("click", function (e) {
+   /**
+   * Displays the c4l buttons
+   *
+   * @method _displayDialogue
+   * @private
+   */
+   _displayDialogue: function(e, clickedicon) {
+      e.preventDefault();
+      var width=600;
+
+      var dialogue = this.getDialogue({
+         headerContent: M.util.get_string('dialogtitle', 'atto_c4l'),
+            width: width + 'px',
+            focusAfterHide: clickedicon
+      });
+
+      //Dialog doesn't detect changes in width without this
+      //if you reuse the dialog, this seems necessary
+      if(dialogue.width !== width + 'px'){
+            dialogue.set('width',width+'px');
+      }
+
+      //Creates container
+      var bodycontent =  Y.Node.create('<div class="c4l-plugin-container"></div>');
+      var buttonsGrid = Y.Node.create('<div class="c4l-buttons-grid"></div>');
+      
+      var newButton;
+      var selectedButton;
+      var counter = 0;
+      var iconClass;
+
+      this._assembleButtons(buttonsGrid,newButton,counter,iconClass,'contextual');
+      bodycontent.append(buttonsGrid);
+
+      var SetOfbuttons = bodycontent.all('button');
+      console.log(SetOfbuttons);
+      SetOfbuttons.on("click", function (e) {
             selectedButton= e.target.get('id');
             
             console.log(selectedButton );
             componentCode = components[selectedButton].code;
             console.log(componentCode);
-        });
-        SetOfbuttons.on('click', this._doInsert, this, 0);
-        
+      });
+      SetOfbuttons.on('click', this._doInsert, this, 0);
+      
+      dialogue.set('bodyContent', bodycontent);
+      dialogue.show();
+      this.markUpdated();
+   },
 
-         dialogue.set('bodyContent', bodycontent);
-         dialogue.show();
-         this.markUpdated();
-     },
+   /**
+   * Inserts the output in the editor
+   * @method _doInsert
+   * @private
+   */
+   _doInsert : function(e,componentsIndex){
+      e.preventDefault();
+      this.getDialogue({
+            focusAfterHide: null
+      }).hide();
+      
+      this.editor.focus();
+      this.get('host').insertContentAtFocusPoint(componentCode);
+      this.markUpdated();
+   },
 
+   /**
+   * Assembles the grid of buttons that will be included in the plugin modal
+   * @method _assembleButtons
+   * @private
+   */
+   _assembleButtons : function(buttonsGrid,newButton,counter,iconClass,componentsType) {
+      for (i = 0; i < componentsArray.length; i++) {
 
-     /**
-      * Inserts the users input onto the page
-      * @method _getDialogueContent
-      * @private
-      */
-     _doInsert : function(e,componentsIndex){
+      console.log('nom del component contextual: ' + componentsArray[i].name);
          
-         e.preventDefault();
-         this.getDialogue({
-             focusAfterHide: null
-         }).hide();
-         
-         this.editor.focus();
-         this.get('host').insertContentAtFocusPoint(componentCode);
-         this.markUpdated();
-     },
-
-     _assembleButtons : function(buttonsGrid,newButton,counter,iconClass,componentsType) {
-        for (i = 0; i < componentsArray.length; i++) {
-
-         console.log('nom del component contextual: ' + componentsArray[i].name);
-            
-         newButton = Y.Node.create('<button></button>');
-         newButton.set('innerHTML',componentsArray[i].name);
-         newButton.set('id',counter);
-         iconClass = componentsArray[i].imageClass;
-         newButton.addClass('c4l-dialog-button ' + iconClass);
-         newButton.appendTo(Y.one('body'));
-         buttonsGrid.append(newButton);
-         counter++;
-         }
-     }
-   });
+      newButton = Y.Node.create('<button></button>');
+      newButton.set('innerHTML',componentsArray[i].name);
+      newButton.set('id',counter);
+      iconClass = componentsArray[i].imageClass;
+      newButton.addClass('c4l-dialog-button ' + iconClass);
+      newButton.appendTo(Y.one('body'));
+      buttonsGrid.append(newButton);
+      counter++;
+      }
+   }
+});
 
 }, '@VERSION@', {"requires": ["moodle-editor_atto-plugin"]});
