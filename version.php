@@ -24,30 +24,11 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2021050634;        // The current plugin version (Date: YYYYMMDDXX).
-$plugin->requires  = 2019111800;        // Requires this Moodle version.
+$plugin->version   = 2021081200;  // The current plugin version (Date: YYYYMMDDXX).
+$plugin->requires  = 2019111800;  // Requires this Moodle version.
 $plugin->component = 'atto_c4l';  // Full name of the plugin (used for diagnostics).
 $plugin->maturity  = MATURITY_STABLE;
 // Human readable version information
 $plugin->release   = '1.1.0 (Build 2018041000)';
 
-//This plugin is strongly inspired by the Poodle Snippet plugin 
-//(https://moodle.org/plugins/atto_snippet) by Justin Hunt. Certain
-//functions and structural elements are directly taken from the 
-//aforementioned plugin; those particular parts were, however, not 
-//originaly licensed in any way, so the same lack of reference has 
-//been applyed in the corresponding files here.
 
-//Icons authored by Roger Segú, except for the following, licensed 
-//under Creative Commons CCBY:
-//  - Glasses by Austin Condiff (https://thenounproject.com/icon/70907/)
-//  - Estimate by xwoodhillx (https://thenounproject.com/icon/1061038/)
-//  - Quote by Rohith M S (https://thenounproject.com/icon/77920/)
-//  - Pin by Icons fest (https://thenounproject.com/icon/689105/
-//  - Bulb by Adrien Coquet (https://thenounproject.com/icon/1175583/)
-//  - Date by Karan (https://thenounproject.com/icon/1272092/)
-//  - Success by Alice Design (https://thenounproject.com/icon/3405499/)
-//  - Clock by Aybige (https://thenounproject.com/icon/2310543/)
-//  - Feedback by dilayorganci (https://thenounproject.com/icon/651868/) 
-//  - Star by Zaff Studio (https://thenounproject.com/icon/1368720/) 
-//  - Tag by Ananth (https://thenounproject.com/icon/938953/)
