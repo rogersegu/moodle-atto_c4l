@@ -28,7 +28,7 @@ $plugin->version   = 2021081200;  // The current plugin version (Date: YYYYMMDDX
 $plugin->requires  = 2019111800;  // Requires this Moodle version.
 $plugin->component = 'atto_c4l';  // Full name of the plugin (used for diagnostics).
 $plugin->maturity  = MATURITY_STABLE;
-// Human readable version information
+// Human readable version information.
 $plugin->release   = '1.1.0 (Build 2018041000)';
 
 
