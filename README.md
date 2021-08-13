@@ -12,15 +12,5 @@ The plugin is part of a broader, collaborative project called Components for Lea
 
 This plugin is strongly inspired by the Poodle Snippet plugin (https://moodle.org/plugins/atto_snippet) by Justin Hunt. Certain functions and structural elements are directly taken from the aforementioned plugin.
 
-Icons authored by Roger Segú, except for the following, licensed under Creative Commons CCBY:
-  - Glasses by Austin Condiff (https://thenounproject.com/icon/70907/)
-  - Estimate by xwoodhillx (https://thenounproject.com/icon/1061038/)
-  - Quote by Rohith M S (https://thenounproject.com/icon/77920/)
-  - Pin by Icons fest (https://thenounproject.com/icon/689105/
-  - Bulb by Adrien Coquet (https://thenounproject.com/icon/1175583/)
-  - Date by Karan (https://thenounproject.com/icon/1272092/)
-  - Success by Alice Design (https://thenounproject.com/icon/3405499/)
-  - Clock by Aybige (https://thenounproject.com/icon/2310543/)
-  - Feedback by dilayorganci (https://thenounproject.com/icon/651868/) 
-  - Star by Zaff Studio (https://thenounproject.com/icon/1368720/) 
-  - Tag by Ananth (https://thenounproject.com/icon/938953/)
+Icons authored by Roger Segú, except for the following, licensed under Creative Commons CCBY, [Glasses](https://thenounproject.com/icon/70907/) by Austin Condiff, [Estimate](https://thenounproject.com/icon/1061038/) by xwoodhillx, [Quote](https://thenounproject.com/icon/77920/) by Rohith M S, [Pin](https://thenounproject.com/icon/689105/) by Icons fest, [Bulb](https://thenounproject.com/icon/1175583/) by Adrien Coquet, [Date](https://thenounproject.com/icon/1272092/) by Karan, [Success](https://thenounproject.com/icon/3405499/) by Alice Design, [Clock](https://thenounproject.com/icon/2310543/) by Aybige, [Feedback](https://thenounproject.com/icon/651868/) by dilayorganci, [Star](https://thenounproject.com/icon/1368720/) by Zaff Studio, [Tag](https://thenounproject.com/icon/938953/) by Ananth.
+
