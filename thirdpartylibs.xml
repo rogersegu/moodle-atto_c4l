@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<libraries>
+    <library>
+        <location>pix/noun_project_icons</location>
+        <name>The Noun Project</name>
+        <license>Creative Commons CCBY</license>
+        <licenseversion>3.0</licenseversion>
+    </library>
+    <library>
+        <location>yui/build/moodle-atto_c4l-button</location>
+        <name>Unsplash - https://unsplash.com</name>
+        <license>Unsplash license - https://unsplash.com/license</license>
+    </library>                 
+</libraries>

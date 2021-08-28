@@ -83,15 +83,15 @@
 /* Contextual components buttons */
 
 .c4l-keyconcept-icon:before {
-    content: url([[pix:atto_c4l|c4l_keyconcept_icon]]);
+    content: url([[pix:atto_c4l|noun_project_icons/c4l_keyconcept_icon]]);
 }
 
 .c4l-tip-icon:before {
-    content: url([[pix:atto_c4l|c4l_tip_icon]]);
+    content: url([[pix:atto_c4l|noun_project_icons/c4l_tip_icon]]);
 }
 
 .c4l-reminder-icon:before {
-    content: url([[pix:atto_c4l|c4l_reminder_icon]]);
+    content: url([[pix:atto_c4l|noun_project_icons/c4l_reminder_icon]]);
 }
 
 .c4l-attention-icon:before {
@@ -99,7 +99,7 @@
 }
 
 .c4l-quote-icon:before {
-    content: url([[pix:atto_c4l|c4l_quote_icon]]);
+    content: url([[pix:atto_c4l|noun_project_icons/c4l_quote_icon]]);
 }
 
 .c4l-dodontcards-icon:before {
@@ -107,7 +107,7 @@
 }
 
 .c4l-readingcontext-icon:before {
-    content: url([[pix:atto_c4l|c4l_readingcontext_icon]]);
+    content: url([[pix:atto_c4l|noun_project_icons/c4l_readingcontext_icon]]);
 }
 
 .c4l-example-icon:before {
@@ -119,18 +119,18 @@
 }
 
 .c4l-tag-icon:before {
-    content: url([[pix:atto_c4l|c4l_tag_icon]]);
+    content: url([[pix:atto_c4l|noun_project_icons/c4l_tag_icon]]);
 }
 
 
 /* Procedural components buttons */
 
 .c4l-estimatedtime-icon:before {
-    content: url([[pix:atto_c4l|c4l_estimatedtime_icon]]);
+    content: url([[pix:atto_c4l|noun_project_icons/c4l_estimatedtime_icon]]);
 }
 
 .c4l-duedate-icon:before {
-    content: url([[pix:atto_c4l|c4l_duedate_icon]]);
+    content: url([[pix:atto_c4l|noun_project_icons/c4l_duedate_icon]]);
 }
 
 .c4l-proceduralcontext-icon:before {
@@ -141,11 +141,11 @@
 /* Evaluative components buttons */
 
 .c4l-gradingvalue-icon:before {
-    content: url([[pix:atto_c4l|c4l_gradingvalue_icon]]);
+    content: url([[pix:atto_c4l|noun_project_icons/c4l_gradingvalue_icon]]);
 }
 
 .c4l-expectedfeedback-icon:before {
-    content: url([[pix:atto_c4l|c4l_expectedfeedback_icon]]);
+    content: url([[pix:atto_c4l|noun_project_icons/c4l_expectedfeedback_icon]]);
 }
 
 
@@ -233,7 +233,7 @@
 }
 
 .c4l-tip:after {
-    content: url([[pix:atto_c4l|c4l_tip]]);
+    content: url([[pix:atto_c4l|noun_project_icons/c4l_tip]]);
     position: absolute;
     top: 6px;
     right: -3px;
@@ -263,7 +263,7 @@
 }
 
 .c4l-reminder:after {
-    content: url([[pix:atto_c4l|c4l_reminder]]);
+    content: url([[pix:atto_c4l|noun_project_icons/c4l_reminder]]);
     position: absolute;
     top: 6px;
     right: -3px;
@@ -348,13 +348,13 @@
 }
 
 .c4l-quote-text p:first-of-type:before {
-    content: url([[pix:atto_c4l|c4l_quote_open]]);
+    content: url([[pix:atto_c4l|noun_project_icons/c4l_quote_open]]);
     position: relative;
     top: -4px;
     margin-right: 2px;
 } 
 .c4l-quote-text p:last-of-type::after {
-    content: url([[pix:atto_c4l|c4l_quote_close]]);
+    content: url([[pix:atto_c4l|noun_project_icons/c4l_quote_close]]);
     position: relative;
     top: -2px;
     margin-left: 2px;
@@ -601,7 +601,7 @@
 }
 
 .c4l-estimatedtime:before {
-    content: url([[pix:atto_c4l|c4l_estimatedtime]]);
+    content: url([[pix:atto_c4l|noun_project_icons/c4l_estimatedtime]]);
     position: absolute;
     left: 12px;
 }
@@ -625,7 +625,7 @@
 }
 
 .c4l-duedate:after {
-    content: url([[pix:atto_c4l|c4l_duedate]]);
+    content: url([[pix:atto_c4l|noun_project_icons/c4l_duedate]]);
     position: absolute;
     left: 12px;
 }
@@ -671,7 +671,7 @@
 }
 
 .c4l-gradingvalue:after {
-    content: url([[pix:atto_c4l|c4l_gradingvalue]]);
+    content: url([[pix:atto_c4l|noun_project_icons/c4l_gradingvalue]]);
     position: absolute;
     left: 12px;
     top: 6px;
@@ -705,7 +705,7 @@
 }
 
 .c4l-expectedfeedback:after {
-    content: url([[pix:atto_c4l|c4l_expectedfeedback]]);
+    content: url([[pix:atto_c4l|noun_project_icons/c4l_expectedfeedback]]);
     position: absolute;
     bottom: 6px;
     right: -3px;
