@@ -138,9 +138,8 @@
     ];
 
 
-var NumOfComponents = components.length;
 
-var currentButton;
+
 
 var componentsArray = Y.Array(components);
 
@@ -199,12 +198,9 @@ Y.namespace('M.atto_c4l').Button = Y.Base.create('button', Y.M.editor_atto.Edito
       // Creates container
       var bodycontent = Y.Node.create('<div class="c4l-plugin-container"></div>');
       var buttonsGrid = Y.Node.create('<div class="c4l-buttons-grid"></div>');
-      var newButton;
       var selectedButton;
-      var counter = 0;
-      var iconClass;
 
-      this._assembleButtons(buttonsGrid, newButton, counter, iconClass, 'contextual');
+      this._assembleButtons(buttonsGrid);
       bodycontent.append(buttonsGrid);
 
       var SetOfbuttons = bodycontent.all('button');
@@ -223,7 +219,7 @@ Y.namespace('M.atto_c4l').Button = Y.Base.create('button', Y.M.editor_atto.Edito
    * @method _doInsert
    * @private
    */
-   _doInsert: function(e, componentsIndex) {
+   _doInsert: function(e) {
       e.preventDefault();
       this.getDialogue({
             focusAfterHide: null
@@ -238,16 +234,15 @@ Y.namespace('M.atto_c4l').Button = Y.Base.create('button', Y.M.editor_atto.Edito
    * @method _assembleButtons
    * @private
    */
-   _assembleButtons: function(buttonsGrid, newButton, counter, iconClass, componentsType) {
+   _assembleButtons: function(buttonsGrid) {
       for (i = 0; i < componentsArray.length; i++) {
       newButton = Y.Node.create('<button></button>');
       newButton.set('innerHTML', componentsArray[i].name);
-      newButton.set('id', counter);
+      newButton.set('id', i);
       iconClass = componentsArray[i].imageClass;
       newButton.addClass('c4l-dialog-button ' + iconClass);
       newButton.appendTo(Y.one('body'));
       buttonsGrid.append(newButton);
-      counter++;
       }
    }
 });
