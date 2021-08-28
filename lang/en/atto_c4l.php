@@ -48,4 +48,5 @@ $string['expectedfeedback'] = 'Expected Feedback';
 $string['allpurposecard'] = 'All-Purpose Card';
 $string['inlinetag'] = 'Inline tag';
 $string['enableattoc4l'] = 'Enable Components for Learning';
+$string['privacy:metadata'] = 'The Atto Components for Learning plugin does not store any personal data.';
 
