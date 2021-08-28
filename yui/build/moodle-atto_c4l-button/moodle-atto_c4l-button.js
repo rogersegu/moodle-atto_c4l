@@ -206,10 +206,6 @@ Y.namespace('M.atto_c4l').Button = Y.Base.create('button', Y.M.editor_atto.Edito
       bodycontent.append(buttonsGrid);
 
       var SetOfbuttons = bodycontent.all('button');
-      SetOfbuttons.on("click", function(e) {
-            selectedButton = e.target.get('id');
-            componentCode = components[selectedButton].code;
-      });
       SetOfbuttons.on('click', this._doInsert, this, 0);
       dialogue.set('bodyContent', bodycontent);
       dialogue.show();
@@ -223,6 +219,8 @@ Y.namespace('M.atto_c4l').Button = Y.Base.create('button', Y.M.editor_atto.Edito
    */
    _doInsert: function(e) {
       e.preventDefault();
+      var selectedButton = e.target.get('id');
+      var componentCode = components[selectedButton].code;
       this.getDialogue({
             focusAfterHide: null
       }).hide();
