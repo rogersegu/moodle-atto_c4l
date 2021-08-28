@@ -18,13 +18,15 @@
  * Atto - Components for Learning version file.
  *
  * @package    atto_c4l
- * @copyright  Roger Segú
+ * @copyright  2021 Roger Segú {@link https://rogersegu.me}
+ * @author     Roger Segú {@link https://rogersegu.me}
+ * @author     Based on code originally written by Justin Hunt {@link https://poodll.com}.
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2021081201;  // The current plugin version (Date: YYYYMMDDXX).
+$plugin->version   = 2021081203;  // The current plugin version (Date: YYYYMMDDXX).
 $plugin->requires  = 2019111800;  // Requires this Moodle version.
 $plugin->component = 'atto_c4l';  // Full name of the plugin (used for diagnostics).
 $plugin->maturity  = MATURITY_STABLE;

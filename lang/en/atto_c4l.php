@@ -18,12 +18,13 @@
  * Strings for component 'atto_c4l', language 'en'.
  *
  * @package    atto_c4l
- * @copyright  COPYRIGHTINFO
+ * @copyright  2021 Roger Segú {@link https://rogersegu.me}
+ * @author     Roger Segú {@link https://rogersegu.me}
+ * @author     Based on code originally written by Justin Hunt {@link https://poodll.com}.
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 $string['pluginname'] = 'Components for Learning (c4l)';
-$string['atto_c4l'] = 'atto_c4l';
 $string['generalheading'] = 'General settings';
 $string['dialogtitle'] = 'Choose a component';
 $string['contextual'] = 'Contextual';

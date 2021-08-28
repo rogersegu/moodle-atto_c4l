@@ -15,10 +15,12 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Atto text editor integration version file.
+ * Atto - Components for Learning functions file.
  *
  * @package    atto_c4l
- * @copyright  COPYRIGHTINFO
+ * @copyright  2021 Roger Segú {@link https://rogersegu.me}
+ * @author     Roger Segú {@link https://rogersegu.me}
+ * @author     Based on code originally written by Justin Hunt {@link https://poodll.com}.
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -26,7 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 
 
 /**
- * Initialise this plugin
+ * Initializes the strings required for the JS.
+ * 
  * @param string $elementid
  */
 function atto_c4l_strings_for_js() {
