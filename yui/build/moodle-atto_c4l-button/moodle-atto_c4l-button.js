@@ -15,9 +15,13 @@ YUI.add('moodle-atto_c4l-button', function (Y, NAME) {
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-/*
+/**
+ * Atto - Components for Learning UI logic added.
+ *
  * @package    atto_c4l
- * @copyright  COPYRIGHTINFO
+ * @copyright  2021 Roger Segú {@link https://rogersegu.me}
+ * @author     Roger Segú {@link https://rogersegu.me}
+ * @author     Based on code originally written by Justin Hunt {@link https://poodll.com}.
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -26,7 +30,7 @@ YUI.add('moodle-atto_c4l-button', function (Y, NAME) {
  */
 
 /**
- * Atto text editor Components for Learning plugin.
+ * Atto text editor plugin custom button class logic.
  *
  * @namespace M.atto_c4l
  * @class button
@@ -34,110 +38,110 @@ YUI.add('moodle-atto_c4l-button', function (Y, NAME) {
  */
 
 
- var components = [
-     {
+var components = [
+    {
         name: M.util.get_string('keyconcept', 'atto_c4l'),
         type: "contextual",
         imageClass: "c4l-keyconcept-icon",
         code: "<p class=\"c4l-spacer\"></p><div class=\"c4l-keyconcept\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor odio vel turpis consequat sodales.</div><p><br></p>"
-     },
-     {
+    },
+    {
         name: M.util.get_string('tip', 'atto_c4l'),
         type: "contextual",
         imageClass: "c4l-tip-icon",
         code: "<p class=\"c4l-spacer\"></p><div class=\"c4l-tip\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor odio vel turpis consequat sodales.</div><p><br></p>"
-     },
-     {
+    },
+    {
         name: M.util.get_string('reminder', 'atto_c4l'),
         type: "contextual",
         imageClass: "c4l-reminder-icon",
         code: "<p class=\"c4l-spacer\"></p><div class=\"c4l-reminder\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor odio vel turpis consequat sodales.</div><p><br></p>"
-     },
-     {
+    },
+    {
         name: M.util.get_string('attention', 'atto_c4l'),
         type: "contextual",
         imageClass: "c4l-attention-icon",
         code: "<p class=\"c4l-spacer\"></p><div class=\"c4l-attention\">Aquest és un bloc de text de mostra, el pots esborrar i enganxar aquí el teu text.</div><p><br></p>"
-     },
-     {
+    },
+    {
         name: M.util.get_string('quote', 'atto_c4l'),
         type: "contextual",
         imageClass: "c4l-quote-icon",
         code: "<p class=\"c4l-spacer\"></p><div class=\"c4l-quote\"><div class=\"c4l-quote-body\"><div class=\"c4l-quote-line\"></div><div class=\"c4l-quote-text\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a posuere nibh, eu mollis lacus. Praesent dictum in velit sed dapibus.</p></div></div><div class=\"c4l-quote-caption\"><span>Marcus Tullius Cicero</span>De Finibus Bonorum et Malorum</div></div><p><br></p>"
-     },
-     {
+    },
+    {
         name: M.util.get_string('dodontcards', 'atto_c4l'),
         type: "contextual",
         imageClass: "c4l-dodontcards-icon",
         code: "<p class=\"c4l-spacer\"></p><div class=\"c4l-dodontcards\"><div class=\"c4l-dodontcards-do\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a posuere nibh, eu mollis lacus. Praesent dictum in velit sed dapibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div><div class=\"c4l-dodontcards-dont\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a posuere nibh, eu mollis lacus. Praesent dictum in velit sed dapibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div></div><p><br></p>"
-     },
-     {
+    },
+    {
         name: M.util.get_string('readingcontext', 'atto_c4l'),
         type: "contextual",
         imageClass: "c4l-readingcontext-icon",
         code: "<p class=\"c4l-spacer\"></p><div class=\"c4l-readingcontext\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus leo, hendrerit ac sem vitae, posuere egestas nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus leo, hendrerit ac sem vitae, posuere egestas nisi.</p><div class=\"c4l-readingcontext-caption\"><span>Marcus Tullius Cicero</span>De Finibus Bonorum et Malorum</div></div><p><br></p>"
-     },
-     {
+    },
+    {
         name: M.util.get_string('example', 'atto_c4l'),
         type: "contextual",
         imageClass: "c4l-example-icon",
         code: "<p class=\"c4l-spacer\"></p><div class=\"c4l-example\"><h1>Lorem impsum dolor sit amet</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a posuere nibh, eu mollis lacus. Praesent dictum in velit sed dapibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a posuere nibh, eu mollis lacus. Praesent dictum in velit sed dapibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p></div><p><br></p>"
-     },
-     {
+    },
+    {
         name: M.util.get_string('figure', 'atto_c4l'),
         type: "contextual",
         imageClass: "c4l-figure-icon",
         code: "<p class=\"c4l-spacer\"></p><figure class=\"c4l-figure\"><img src=\"https://source.unsplash.com/random/800x600\" alt=\"Lorem impsum dolor sit amet\"><figcaption><em class=\"c4l-figure-footer\">Consectetur adipiscing elit.</em><span class=\"c4l-figure-caption\"><strong>Font: </strong>Phasellus a posuere nibh.</span></figcaption></figure><p><br></p>"
-     },
-     {
+    },
+    {
         name: M.util.get_string('tag', 'atto_c4l'),
         type: "contextual",
         imageClass: "c4l-tag-icon",
         code: "<p class=\"c4l-spacer\"></p><div class=\"c4l-display-left\"><div class=\"c4l-tag\">Lorem ipsum</div></div>"
-     },
-     {
+    },
+    {
         name: M.util.get_string('estimatedtime', 'atto_c4l'),
         type: "procedural",
         imageClass: "c4l-estimatedtime-icon",
         code: "<p class=\"c4l-spacer\"></p><div class=\"c4l-inline-group\"><div class=\"c4l-estimatedtime\">15 <span>min</span></div></div>"
-     },
-     {
+    },
+    {
         name: M.util.get_string('duedate', 'atto_c4l'),
         type: "procedural",
         imageClass: "c4l-duedate-icon",
         code: "<p class=\"c4l-spacer\"></p><div class=\"c4l-inline-group\"><div class=\"c4l-duedate\">November 17th</div></div>"
-     },
-     {
+    },
+    {
         name: M.util.get_string('proceduralcontext', 'atto_c4l'),
         type: "procedural",
         imageClass: "c4l-proceduralcontext-icon",
         code: "<p class=\"c4l-spacer\"></p><p class=\"c4l-proceduralcontext\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a posuere nibh, eu mollis lacus. Praesent dictum in velit sed dapibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla quis lorem aliquet, fermentum dolor ac, venenatis turpis.</p><p><br></p>"
-     },
-     {
+    },
+    {
         name: M.util.get_string('gradingvalue', 'atto_c4l'),
         type: "evaluative",
         imageClass: "c4l-gradingvalue-icon",
         code: "<p class=\"c4l-spacer\"></p><div class=\"c4l-inline-group\"><div class=\"c4l-gradingvalue\"><span>Grading value: </span>33.3%</div></div>"
-     },
-     {
+    },
+    {
         name: M.util.get_string('expectedfeedback', 'atto_c4l'),
         type: "evaluative",
         imageClass: "c4l-expectedfeedback-icon",
         code: "<p class=\"c4l-spacer\"></p><div class=\"c4l-expectedfeedback\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a posuere nibh, eu mollis lacus. Praesent dictum in velit sed dapibus.</p></div><p><br></p>"
-     }, 
-     {
+    }, 
+    {
         name: M.util.get_string('allpurposecard', 'atto_c4l'),
         type: "helper",
         imageClass: "c4l-allpurposecard-icon",
         code: "<p class=\"c4l-spacer\"></p><div class=\"c4l-allpurposecard\"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a posuere nibh, eu mollis lacus. Praesent dictum in velit sed dapibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</p></div><p><br></p>"
-     },
-     {
+    },
+    {
         name: M.util.get_string('inlinetag', 'atto_c4l'),
         type: "helper",
         imageClass: "c4l-inlinetag-icon",
         code: "<span class=\"c4l-inlinetag\">Text</span>"
-     },
-    ];
+    },
+];
 
 
 
@@ -146,16 +150,6 @@ YUI.add('moodle-atto_c4l-button', function (Y, NAME) {
 var componentsArray = Y.Array(components);
 
 Y.namespace('M.atto_c4l').Button = Y.Base.create('button', Y.M.editor_atto.EditorPlugin, [], {
-
-   /**
-   * A reference to the current selection at the time that the dialogue
-   * was opened.
-   *
-   * @property _currentSelection
-   * @type Range
-   * @private
-   */
-   _currentSelection: null,
 
    initializer: function() {
       // If we don't have the capability to view then give up.
@@ -205,8 +199,8 @@ Y.namespace('M.atto_c4l').Button = Y.Base.create('button', Y.M.editor_atto.Edito
       this._assembleButtons(buttonsGrid);
       bodycontent.append(buttonsGrid);
 
-      var SetOfbuttons = bodycontent.all('button');
-      SetOfbuttons.on('click', this._doInsert, this, 0);
+      var setOfButtons = bodycontent.all('button');
+      setOfButtons.on('click', this._doInsert, this, 0);
       dialogue.set('bodyContent', bodycontent);
       dialogue.show();
       this.markUpdated();
@@ -236,13 +230,13 @@ Y.namespace('M.atto_c4l').Button = Y.Base.create('button', Y.M.editor_atto.Edito
    */
    _assembleButtons: function(buttonsGrid) {
       for (i = 0; i < componentsArray.length; i++) {
-      newButton = Y.Node.create('<button></button>');
-      newButton.set('innerHTML', componentsArray[i].name);
-      newButton.set('id', i);
-      iconClass = componentsArray[i].imageClass;
-      newButton.addClass('c4l-dialog-button ' + iconClass);
-      newButton.appendTo(Y.one('body'));
-      buttonsGrid.append(newButton);
+         newButton = Y.Node.create('<button></button>');
+         newButton.set('innerHTML', componentsArray[i].name);
+         newButton.set('id', i);
+         iconClass = componentsArray[i].imageClass;
+         newButton.addClass('c4l-dialog-button ' + iconClass);
+         newButton.appendTo(Y.one('body'));
+         buttonsGrid.append(newButton);
       }
    }
 });
