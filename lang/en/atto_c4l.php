@@ -24,30 +24,29 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['pluginname'] = 'Components for Learning (c4l)';
+$string['pluginname'] = 'Components for learning (c4l)';
 $string['generalheading'] = 'General settings';
 $string['dialogtitle'] = 'Choose a component';
 $string['contextual'] = 'Contextual';
 $string['procedural'] = 'Procedural';
 $string['evaluative'] = 'Evaluative';
 $string['helper'] = 'Helper';
-$string['keyconcept'] = 'Key Concept';
+$string['keyconcept'] = 'Key concept';
 $string['tip'] = 'Tip';
 $string['reminder'] = 'Reminder';
 $string['attention'] = 'Attention';
 $string['quote'] = 'Quote';
-$string['dodontcards'] = 'Do/Don\'t Cards';
-$string['readingcontext'] = 'Reading Context';
+$string['dodontcards'] = 'Do/don\'t cards';
+$string['readingcontext'] = 'Reading context';
 $string['example'] = 'Example';
 $string['figure'] = 'Figure';
 $string['tag'] = 'Tag';
-$string['estimatedtime'] = 'Estimated Time';
-$string['duedate'] = 'Due Date';
-$string['proceduralcontext'] = 'Procedural Context';
-$string['gradingvalue'] = 'Grading Value';
-$string['expectedfeedback'] = 'Expected Feedback';
-$string['allpurposecard'] = 'All-Purpose Card';
+$string['estimatedtime'] = 'Estimated time';
+$string['duedate'] = 'Due date';
+$string['proceduralcontext'] = 'Procedural context';
+$string['gradingvalue'] = 'Grading value';
+$string['expectedfeedback'] = 'Expected feedback';
+$string['allpurposecard'] = 'All-purpose card';
 $string['inlinetag'] = 'Inline tag';
-$string['enableattoc4l'] = 'Enable Components for Learning';
-$string['privacy:metadata'] = 'The Atto Components for Learning plugin does not store any personal data.';
-
+$string['enableattoc4l'] = 'Enable Components for learning';
+$string['privacy:metadata'] = 'The Atto Components for learning plugin does not store any personal data.';
