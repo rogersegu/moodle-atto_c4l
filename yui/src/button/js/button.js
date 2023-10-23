@@ -39,7 +39,7 @@ var components = [
     {
         name: M.util.get_string('keyconcept', 'atto_c4l'),
         type: "contextual",
-        imageClass: "c4l-keyconcept-icon",
+        imageClass: "atto-c4l-keyconcept-icon",
         code: "<p class=\"c4l-spacer\"></p><div class=\"c4l-keyconcept\">" +
             "{{PLACEHOLDER}}</div><p><br></p>",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor odio vel turpis consequat sodales."
@@ -47,7 +47,7 @@ var components = [
     {
         name: M.util.get_string('tip', 'atto_c4l'),
         type: "contextual",
-        imageClass: "c4l-tip-icon",
+        imageClass: "atto-c4l-tip-icon",
         code: "<p class=\"c4l-spacer\"></p><div class=\"c4l-tip\">" +
             "{{PLACEHOLDER}}</div><p><br></p>",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor odio vel turpis consequat sodales."
@@ -55,7 +55,7 @@ var components = [
     {
         name: M.util.get_string('reminder', 'atto_c4l'),
         type: "contextual",
-        imageClass: "c4l-reminder-icon",
+        imageClass: "atto-c4l-reminder-icon",
         code: "<p class=\"c4l-spacer\"></p><div class=\"c4l-reminder\">" +
             "{{PLACEHOLDER}}</div><p><br></p>",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor odio vel turpis consequat sodales."
@@ -63,7 +63,7 @@ var components = [
     {
         name: M.util.get_string('attention', 'atto_c4l'),
         type: "contextual",
-        imageClass: "c4l-attention-icon",
+        imageClass: "atto-c4l-attention-icon",
         code: "<p class=\"c4l-spacer\"></p><div class=\"c4l-attention\">" +
             "{{PLACEHOLDER}}</div><p><br></p>",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor odio vel turpis consequat sodales."
@@ -71,7 +71,7 @@ var components = [
     {
         name: M.util.get_string('quote', 'atto_c4l'),
         type: "contextual",
-        imageClass: "c4l-quote-icon",
+        imageClass: "atto-c4l-quote-icon",
         code: "<p class=\"c4l-spacer\"></p><div class=\"c4l-quote\">" +
             "<div class=\"c4l-quote-body\"><div class=\"c4l-quote-line\"></div><div class=\"c4l-quote-text\">" +
             "<p>{{PLACEHOLDER}}</p>" +
@@ -83,7 +83,7 @@ var components = [
     {
         name: M.util.get_string('dodontcards', 'atto_c4l'),
         type: "contextual",
-        imageClass: "c4l-dodontcards-icon",
+        imageClass: "atto-c4l-dodontcards-icon",
         code: "<p class=\"c4l-spacer\"></p><div class=\"c4l-dodontcards\">" +
             "<div class=\"c4l-dodontcards-do\">{{PLACEHOLDER}}</div>" +
             "<div class=\"c4l-dodontcards-dont\">Lorem ipsum dolor sit amet, consectetur adipiscing elit." +
@@ -97,7 +97,7 @@ var components = [
     {
         name: M.util.get_string('readingcontext', 'atto_c4l'),
         type: "contextual",
-        imageClass: "c4l-readingcontext-icon",
+        imageClass: "atto-c4l-readingcontext-icon",
         code: "<p class=\"c4l-spacer\"></p><div class=\"c4l-readingcontext\">" +
             "<p>{{PLACEHOLDER}}</p>" +
             "<div class=\"c4l-readingcontext-caption\"><span>Marcus Tullius Cicero</span>" +
@@ -109,7 +109,7 @@ var components = [
     {
         name: M.util.get_string('example', 'atto_c4l'),
         type: "contextual",
-        imageClass: "c4l-example-icon",
+        imageClass: "atto-c4l-example-icon",
         code: "<p class=\"c4l-spacer\"></p><div class=\"c4l-example\">" +
             "<h1>Lorem impsum dolor sit amet</h1>" +
             "<p>{{PLACEHOLDER}}</p></div><p><br></p>",
@@ -121,7 +121,7 @@ var components = [
     {
         name: M.util.get_string('figure', 'atto_c4l'),
         type: "contextual",
-        imageClass: "c4l-figure-icon",
+        imageClass: "atto-c4l-figure-icon",
         code: "<p class=\"c4l-spacer\"></p><figure class=\"c4l-figure\">" +
             "<img src=\"https://source.unsplash.com/random/800x600\" alt=\"Lorem impsum dolor sit amet\">" +
             "<figcaption><em class=\"c4l-figure-footer\">{{PLACEHOLDER}}</em><span class=\"c4l-figure-caption\">" +
@@ -132,14 +132,14 @@ var components = [
     {
         name: M.util.get_string('tag', 'atto_c4l'),
         type: "contextual",
-        imageClass: "c4l-tag-icon",
+        imageClass: "atto-c4l-tag-icon",
         code: "<p class=\"c4l-spacer\"></p><div class=\"c4l-display-left\"><div class=\"c4l-tag\">{{PLACEHOLDER}}</div></div>",
         text: "Lorem ipsum"
     },
     {
         name: M.util.get_string('estimatedtime', 'atto_c4l'),
         type: "procedural",
-        imageClass: "c4l-estimatedtime-icon",
+        imageClass: "atto-c4l-estimatedtime-icon",
         code: "<p class=\"c4l-spacer\"></p><div class=\"c4l-inline-group\"><div class=\"c4l-estimatedtime\">" +
             "{{PLACEHOLDER}} <span>min</span></div></div>",
         text: "15"
@@ -147,14 +147,14 @@ var components = [
     {
         name: M.util.get_string('duedate', 'atto_c4l'),
         type: "procedural",
-        imageClass: "c4l-duedate-icon",
+        imageClass: "atto-c4l-duedate-icon",
         code: "<p class=\"c4l-spacer\"></p><div class=\"c4l-inline-group\"><div class=\"c4l-duedate\">{{PLACEHOLDER}}</div></div>",
         text: "November 17th"
     },
     {
         name: M.util.get_string('proceduralcontext', 'atto_c4l'),
         type: "procedural",
-        imageClass: "c4l-proceduralcontext-icon",
+        imageClass: "atto-c4l-proceduralcontext-icon",
         code: "<p class=\"c4l-spacer\"></p><p class=\"c4l-proceduralcontext\">" +
             "{{PLACEHOLDER}}</p><p><br></p>",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a posuere nibh, eu mollis lacus." +
@@ -165,7 +165,7 @@ var components = [
     {
         name: M.util.get_string('gradingvalue', 'atto_c4l'),
         type: "evaluative",
-        imageClass: "c4l-gradingvalue-icon",
+        imageClass: "atto-c4l-gradingvalue-icon",
         code: "<p class=\"c4l-spacer\"></p><div class=\"c4l-inline-group\"><div class=\"c4l-gradingvalue\">" +
             "<span>Grading value: </span>{{PLACEHOLDER}}</div></div>",
         text: "33.3%"
@@ -173,7 +173,7 @@ var components = [
     {
         name: M.util.get_string('expectedfeedback', 'atto_c4l'),
         type: "evaluative",
-        imageClass: "c4l-expectedfeedback-icon",
+        imageClass: "atto-c4l-expectedfeedback-icon",
         code: "<p class=\"c4l-spacer\"></p><div class=\"c4l-expectedfeedback\">" +
             "<p>{{PLACEHOLDER}}</p></div><p><br></p>",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a posuere nibh, eu mollis lacus." +
@@ -182,7 +182,7 @@ var components = [
     {
         name: M.util.get_string('allpurposecard', 'atto_c4l'),
         type: "helper",
-        imageClass: "c4l-allpurposecard-icon",
+        imageClass: "atto-c4l-allpurposecard-icon",
         code: "<p class=\"c4l-spacer\"></p><div class=\"c4l-allpurposecard\">" +
             "<p>{{PLACEHOLDER}}</p></div><p><br></p>",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a posuere nibh, eu mollis lacus." +
@@ -192,7 +192,7 @@ var components = [
     {
         name: M.util.get_string('inlinetag', 'atto_c4l'),
         type: "helper",
-        imageClass: "c4l-inlinetag-icon",
+        imageClass: "atto-c4l-inlinetag-icon",
         code: "<span class=\"c4l-inlinetag\">{{PLACEHOLDER}}</span>",
         text: "Text"
     },
@@ -243,8 +243,8 @@ Y.namespace('M.atto_c4l').Button = Y.Base.create('button', Y.M.editor_atto.Edito
         }
 
         // Creates container
-        var bodycontent = Y.Node.create('<div class="c4l-plugin-container"></div>');
-        var buttonsGrid = Y.Node.create('<div class="c4l-buttons-grid"></div>');
+        var bodycontent = Y.Node.create('<div class="atto-c4l-plugin-container"></div>');
+        var buttonsGrid = Y.Node.create('<div class="atto-c4l-buttons-grid"></div>');
 
         this._assembleButtons(buttonsGrid);
         bodycontent.append(buttonsGrid);
@@ -290,7 +290,7 @@ Y.namespace('M.atto_c4l').Button = Y.Base.create('button', Y.M.editor_atto.Edito
             newButton.set('innerHTML', componentsArray[i].name);
             newButton.set('id', i);
             var iconClass = componentsArray[i].imageClass;
-            newButton.addClass('c4l-dialog-button ' + iconClass);
+            newButton.addClass('atto-c4l-dialog-button ' + iconClass);
             newButton.appendTo(Y.one('body'));
             buttonsGrid.append(newButton);
         }
