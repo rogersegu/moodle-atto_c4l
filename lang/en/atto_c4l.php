@@ -48,5 +48,6 @@ $string['gradingvalue'] = 'Grading value';
 $string['expectedfeedback'] = 'Expected feedback';
 $string['allpurposecard'] = 'All-purpose card';
 $string['inlinetag'] = 'Inline tag';
+$string['learningoutcomes'] = 'Learning outcomes';
 $string['enableattoc4l'] = 'Enable Components for learning';
 $string['privacy:metadata'] = 'The Atto Components for learning plugin does not store any personal data.';

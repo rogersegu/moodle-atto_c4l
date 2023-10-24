@@ -56,6 +56,7 @@ function atto_c4l_strings_for_js() {
                                           'gradingvalue',
                                           'expectedfeedback',
                                           'allpurposecard',
-                                          'inlinetag'),
+                                          'inlinetag',
+                                          'learningoutcomes'),
                                       'atto_c4l');
 }

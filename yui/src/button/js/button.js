@@ -61,14 +61,6 @@ var components = [
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor odio vel turpis consequat sodales."
     },
     {
-        name: M.util.get_string('attention', 'atto_c4l'),
-        type: "contextual",
-        imageClass: "atto-c4l-attention-icon",
-        code: "<p class=\"c4l-spacer\"></p><div class=\"c4l-attention\">" +
-            "{{PLACEHOLDER}}</div><p><br></p>",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor odio vel turpis consequat sodales."
-    },
-    {
         name: M.util.get_string('quote', 'atto_c4l'),
         type: "contextual",
         imageClass: "atto-c4l-quote-icon",
@@ -137,6 +129,14 @@ var components = [
         text: "Lorem ipsum"
     },
     {
+        name: M.util.get_string('attention', 'atto_c4l'),
+        type: "procedural",
+        imageClass: "atto-c4l-attention-icon",
+        code: "<p class=\"c4l-spacer\"></p><div class=\"c4l-attention\">" +
+            "{{PLACEHOLDER}}</div><p><br></p>",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor odio vel turpis consequat sodales."
+    },
+    {
         name: M.util.get_string('estimatedtime', 'atto_c4l'),
         type: "procedural",
         imageClass: "atto-c4l-estimatedtime-icon",
@@ -157,6 +157,22 @@ var components = [
         imageClass: "atto-c4l-proceduralcontext-icon",
         code: "<p class=\"c4l-spacer\"></p><p class=\"c4l-proceduralcontext\">" +
             "{{PLACEHOLDER}}</p><p><br></p>",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a posuere nibh, eu mollis lacus." +
+            " Praesent dictum in velit sed dapibus." +
+            " Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla quis lorem aliquet," +
+            " fermentum dolor ac, venenatis turpis."
+    },
+    {
+        name: M.util.get_string('learningoutcomes', 'atto_c4l'),
+        type: "procedural",
+        imageClass: "atto-c4l-learningoutcomes-icon",
+        code: "<p class=\"c4l-spacer\"></p>" +
+        "<div class=\"c4l-learningoutcomes\"><h6 class=\"c4l-learningoutcomes-title\">Learning Outcomes</h6>" +
+        '<ul class="c4l-learningoutcomes-list"><li>{{PLACEHOLDER}}</li><li>Curabitur non nulla sit amet ' +
+        "nisl tempus convallis quis ac lectus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</li>" +
+        "<li>Nulla porttitor accumsan tincidunt. " +
+        "Curabitur aliquet quam id dui posuere blandit. Curabitur non nulla sit amet nisl tempus convallis " +
+        "quis ac lectus.</li></ul></div><p><br></p>",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus a posuere nibh, eu mollis lacus." +
             " Praesent dictum in velit sed dapibus." +
             " Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla quis lorem aliquet," +
