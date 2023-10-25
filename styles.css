@@ -796,7 +796,7 @@
 }
 .c4l-learningoutcomes .c4l-learningoutcomes-title::before,
 .c4lv-learningoutcomes .c4l-learningoutcomes-title::before {
-    content: url([[pix:tiny_c4l|atto_c4l_learningoutcomes_shadow]]);
+    content: url([[pix:atto_c4l|atto_c4l_learningoutcomes_shadow]]);
     position: absolute;
     width: 3px;
     height: 2px;
@@ -819,7 +819,7 @@
 }
 .c4l-learningoutcomes .c4l-learningoutcomes-list li::before,
 .c4lv-learningoutcomes .c4l-learningoutcomes-list li::before {
-    background-image: url([[pix:tiny_c4l|atto_c4l_learningoutcomes_list_item]]);
+    background-image: url([[pix:atto_c4l|atto_c4l_learningoutcomes_list_item]]);
     background-size: 9px 11px;
     display: inline-block;
     width: 9px;
