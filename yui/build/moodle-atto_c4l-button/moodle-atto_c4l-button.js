@@ -117,7 +117,7 @@ var components = [
         type: "contextual",
         imageClass: "atto-c4l-figure-icon",
         code: "<p class=\"c4l-spacer\"></p><figure class=\"c4l-figure\">" +
-            "<img src=\"https://source.unsplash.com/random/800x600\" alt=\"Lorem impsum dolor sit amet\">" +
+            "<img src=\"https://picsum.photos/800/600\" alt=\"Lorem impsum dolor sit amet\">" +
             "<figcaption><em class=\"c4l-figure-footer\">{{PLACEHOLDER}}</em><span class=\"c4l-figure-caption\">" +
             "<strong>Font: </strong>Phasellus a posuere nibh.</span>" +
             "</figcaption></figure><p><br></p>",

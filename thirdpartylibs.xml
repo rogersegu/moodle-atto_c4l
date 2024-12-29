@@ -8,7 +8,7 @@
     </library>
     <library>
         <location>yui/build/moodle-atto_c4l-button</location>
-        <name>Unsplash - https://unsplash.com</name>
+        <name>Unsplash - https://unsplash.com (via Picsum - https://picsum.photos/)</name>
         <license>Unsplash license - https://unsplash.com/license</license>
     </library>                 
 </libraries>
